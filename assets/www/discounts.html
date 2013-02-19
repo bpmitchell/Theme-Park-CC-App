@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" href="jquery/jquery.mobile-1.3.0-rc.1.min.css" />
+        <script src="jquery/jquery-1.8.3.min.js"></script>
+        <script src="jquery/jquery.mobile-1.3.0-rc.1.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/themeparkcc.css">
+        <script src="js/cordova-2.4.0.js"></script>
+        <script src="js/childbrowser.js"></script>
+        <title>Theme Park CC App - Discounts</title>  
+</head>
+<body onload="onBodyLoad();">
+<div data-role="page">
+<div data-role="header" data-position="fixed">
+        <img src="img/tpcclogo.png" class="ui-btn-left" />
+		<a href="index.html" class="ui-btn-right" data-icon="arrow-l" data-transition="none" 
+           data-direction="reverse">Back</a>
+        <h1></h1>
+        <h1></h1>
+	</div>
+	<div data-role="content" class="discounts-wrapper" data-iscroll="true">
+    <p>
+    <b>2012 TPCC Discounts:</b>
+    </p>
+  <select name="type" id="type" >
+  <option value="blank">Select a Park:</option>
+  <option value="aquatica">Aquatica</option>
+  <option value="belmontpark">Belmont Park</option>
+  <option value="bgt">Busch Gardens Tampa Bay</option>
+  <option value="bgw">Busch Gardens Williamsburg</option>
+  <option value="cga">California's Great America</option>
+  <option value="cw">Canada's Wonderland</option>
+  <option value="canobie">Canobie Lake Park</option>
+  <option value="carowinds">Carowinds</option>
+  <option value="castlepark">Castle Park</option>  
+  <option value="cedarpoint">* Cedar Point</option>
+  <option value="clementonpark">Clementon Park</option>
+  <option value="cliff">Cliff's Amusement Park</option>
+  <option value="darienlake">Darien Lake</option>
+  <option value="dollywood">Dollywood & Dollywood's Splash Country</option>
+  <option value="dorneypark">* Dorney Park</option>
+  <option value="dutch">Dutch Wonderland</option>
+  <option value="elitch">Elitch Gardens</option>
+  <option value="frontier">Frontier City</option>
+  <option value="hawaiian">Hawaiian Falls Waterparks</option>
+  <option value="hw">Holiday World & Splashin Safari</option>
+  <option value="idlewood">* Idlewood & SoakZone</option>
+  <option value="indianabeach">Indiana Beach</option>
+  <option value="kennywood">Kennywood</option>
+  <option value="kingsdominion">Kings's Dominion</option>
+  <option value="kingsisland">King's Island</option>
+  <option value="knotts">Knott's Berry Farm</option>
+  <option value="lake">Lake Compounce</option>
+  <option value="legoland">Legoland Florida</option>
+  <option value="magic">Magic Springs</option>
+  <option value="morey">Morey's Piers</option>
+  <option value="mountain">Mountain Creek Waterpark</option>
+  <option value="nrh20">NRH2O Waterpark</option>
+  <option value="noah">Noah's Ark Waterpark</option>
+  <option value="nick">Nickelodeon Universe</option>
+  <option value="quassy">* Quassy Amusement Park</option>
+  <option value="raging">Raging Waters Sacramento</option>
+  <option value="raging1">Raging Waters San Jose</option>
+  <option value="roaring">Roaring Springs Waterpark</option>
+  <option value="santacruz">Santa Cruz Beack Boardwalk</option>
+  <option value="beach">Schlitterbahn Beach Waterpark</option>
+  <option value="galveston">Schliterbahn Galveston Island Waterpark</option>
+  <option value="vacation">Schlitterbahn Vacation Village Waterpark</option>
+  <option value="waterpark">Schlitterbahn Waterpark Resort</option>
+  <option value="orlando">SeaWorld Orlando</option>
+  <option value="sanantonio">SeaWorld San Antonio</option>
+  <option value="sandiego">SeaWorld San Diego</option>
+  <option value="dollar">Silver Dollar City</option>
+  <option value="silversprings">Silver Springs</option>
+  <option value="silverwood">Silverwood Theme Park</option>
+  <option value="sesame">Sesame Place</option>
+  <option value="america">Six Flags America</option>
+  <option value="fiesta">Six Flags Fiesta Texas</option>
+  <option value="newengland">Six Flags New England</option>
+  <option value="georgia">Six Flags Over Georgia</option>
+  <option value="texas">Six Flags Over Texas</option>
+  <option value="stlouis">Six Flags St. Louis</option>
+  <option value="whitewater">Six Flags White Water</option>
+  <option value="splash">Splash Adventure Waterpark</option>
+  <option value="escape">The Great Escape</option>
+  <option value="waldameer">Waldameer & Water World</option>
+  <option value="wcusa">Water Country USA</option>
+  <option value="waterworldcalifornia">Water World California</option>
+  <option value="wetnwildnc">Wet' N Wild Emerald Pointe</option>
+  <option value="wetnwildorlando">Wet' N Wild Orlando</option>
+  <option value="whitewatermo">White Water</option>
+  <option value="wildadventures">Wild Adventures</option>
+  <option value="wildwaterkingdom">WildWater Kingdom</option>
+  <option value="wildwaterswaterpark">Wild Waters Waterpark</option>
+  <option value="wildwaves">* Wild Waves Theme Park</option>
+</select>
+<div id="target">
+   <div id="blank">
+   <p>
+       <b>Select a Park to view discounts</b>
+       </p>
+       <p>
+       <b>*Discounts for TPCC members only*</b>
+       </p>
+       </div>
+   <div id="aquatica">
+       <p>
+       <b>Location:</b> Orlando, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+   <div id="belmontpark">
+     <p>
+       <b>Location:</b> Sandiego, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+   <div id="bgt">
+         <p>
+       <b>Location:</b> Tampa, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="bgw">
+         <p>
+       <b>Location:</b> Williamsburg, VA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="cga">
+       <p>
+       <b>Location:</b> Santa Clara, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+       </div>
+       <div id="cw">
+       <p>
+       <b>Location:</b> Vaughan, Ontario CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+       </div>
+       <div id="canobie">
+       <p>
+       <b>Location:</b> Salem, NH
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="carowinds">
+       <p>
+       <b>Location:</b> Charlotte, NC
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="castlepark">
+       <p>
+       <b>Location:</b> Riverside, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="cedarpoint">
+       <p>
+       <b>Location:</b> Sandusky, OH
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-1">*Contract/setup pending</font></b>
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="clementonpark">
+       <p>
+       <b>Location:</b> Clementon, NJ
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="cliff">
+       <p>
+       <b>Location:</b> Albuquerque, NM
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="darienlake">
+       <p>
+       <b>Location:</b> Buffalo, NY
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="dollywood">
+       <p>
+       <b>Location:</b> Pigeon Forge, TN
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Flash Your Card
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="dorneypark">
+       <p>
+       <b>Location:</b> Allentown, PA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-1">*Contract/setup pending</font></b>
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="dutch">
+       <p>
+       <b>Location:</b> Lancaster, PA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="elitch">
+       <p>
+       <b>Location:</b> Denver, CO
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="frontier">
+       <p>
+       <b>Location:</b> Frontier City, CO
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="hawaiian">
+       <p>
+       <b>Location:</b> TX (5 Locations)
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="hw">
+       <p>
+       <b>Location:</b> Santa Claus, IN
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Not Available Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="idlewood">
+       <p>
+       <b>Location:</b> Ligonier, PA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-1">*Contract/setup pending</font></b>
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="indianabeach">
+       <p>
+       <b>Location:</b> Monticello, IN
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="kennywood">
+       <p>
+       <b>Location:</b> West Mifflin, PA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="kingsisland">
+       <p>
+       <b>Location:</b> Mason, OH
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="kingsdominion">
+       <p>
+       <b>Location:</b> Doswell, VA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="knotts">
+       <p>
+       <b>Location:</b> Buena Park, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="lake">
+       <p>
+       <b>Location:</b> Bristol, CT
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="legoland">
+       <p>
+       <b>Location:</b> Winter Haven, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="magic">
+       <p>
+       <b>Location:</b> Hot Springs, AR
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="morey">
+       <p>
+       <b>Location:</b> Wildwood, NJ
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="mountain">
+       <p>
+       <b>Location:</b> Vernon, NJ
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="nrh20">
+       <p>
+       <b>Location:</b> North Richland Hills, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> N/A
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="noah">
+       <p>
+       <b>Location:</b> Wisconsin Dells, WI
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="nick">
+       <p>
+       <b>Location:</b> Mall of America, MN
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="quassy">
+       <p>
+       <b>Location:</b> Middlebury, CT
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-1">*Contract/setup pending</font></b>
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="raging">
+       <p>
+       <b>Location:</b> Sacramento, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="raging1">
+       <p>
+       <b>Location:</b> San Jose, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+      <div id="roaring">
+       <p>
+       <b>Location:</b> Boise, ID
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="santacruz">
+       <p>
+       <b>Location:</b> Santa Cruz, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="beach">
+       <p>
+       <b>Location:</b> South Padre Island, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="galveston">
+       <p>
+       <b>Location:</b> Galveston, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="vacation">
+       <p>
+       <b>Location:</b> Kansas City, MO
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="waterpark">
+       <p>
+       <b>Location:</b> New Braunfels, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="orlando">
+       <p>
+       <b>Location:</b> Orlando, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="sanantonio">
+       <p>
+       <b>Location:</b> San Antonio, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="sandiego">
+       <p>
+       <b>Location:</b> San Diego, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+     <div id="dollar">
+       <p>
+       <b>Location:</b> Branson, MO
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="silversprings">
+       <p>
+       <b>Location:</b> Silver Springs, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="silverwood">
+       <p>
+       <b>Location:</b> Athol, ID
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="sesame">
+       <p>
+       <b>Location:</b> Langhorne, PA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="america">
+       <p>
+       <b>Location:</b> Largo, MD
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="fiesta">
+       <p>
+       <b>Location:</b> San Antonio, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="newengland">
+       <p>
+       <b>Location:</b> Agawam, MA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="georgia">
+       <p>
+       <b>Location:</b> Austell, GA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="texas">
+       <p>
+       <b>Location:</b> Arlington, TX
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="stlouis">
+       <p>
+       <b>Location:</b> St. Louis, MO
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="whitewater">
+       <p>
+       <b>Location:</b> Marietta, GA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="splash">
+       <p>
+       <b>Location:</b> Oakland Park, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="escape">
+       <p>
+       <b>Location:</b> Lake George, NY
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="hollywood">
+       <p>
+       <b>Location:</b> Universal City, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-1">*Contract/setup pending</font></b>
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="waldameer">
+       <p>
+       <b>Location:</b> Erie, PA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wcusa">
+       <p>
+       <b>Location:</b> Williamsburg, VA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="waterworldcalifornia">
+       <p>
+       <b>Location:</b> Concord, CA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wetnwildnc">
+       <p>
+       <b>Location:</b> Greensboro, NC
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wetnwildorlando">
+       <p>
+       <b>Location:</b> Orlando, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="whitewatermo">
+       <p>
+       <b>Location:</b> Branson, MO
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> Yes
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wildadventures">
+       <p>
+       <b>Location:</b> Valdosta, GA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wildwaterkingdom">
+       <p>
+       <b>Location:</b> Aurora, OH
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wildwaterswaterpark">
+       <p>
+       <b>Location:</b> Silver Springs, FL
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    <div id="wildwaves">
+       <p>
+       <b>Location:</b> Federal Way, WA
+       </p>
+       <p>
+       <b>Ticket Discount:</b> Yes
+       </p>
+       <p>
+       <b>Season Pass Discount:</b> No
+       </p>
+       <p>
+       <b>Ticket Purchase:</b> Print & Go Online
+       </p>
+       <p>
+       <b><font size="-1">*Contract/setup pending</font></b>
+       </p>
+        <p>
+       <b><font size="-2">*Discounts for members only, subject to change*</font></b>
+       </p>
+    </div>
+    </div>
+    </div>
+    
+    <script src="../www/js/parks.js"></script>
+    
+<div data-role="footer" data-position="fixed">
+	<h1>&copy; 2012: <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkcoasterclub.com');">Theme Park Coaster Club</a>
+	</h1>
+	<h1>App Designer: Brian Mitchell
+	</h1>
+	</div>
+	</div>
+</body>
+</html>
