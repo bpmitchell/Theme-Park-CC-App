@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TPCC Mobile - Partners</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+<script type="text/javascript" charset="utf-8" src="childbrowser.js"></script>  
+<style type="text/css">
+table,td
+    {
+    border:0px;
+    }
+    table
+    {
+    margin:auto;
+    border-spacing: 10px;
+    height: 5px;
+    }
+    td
+    {
+    padding:5px;
+    }
+  </style>
+</head>
+<body onload="onBodyLoad();">
+<div data-role="header" data-position="fixed">
+        <img src="../www/images/tpcclogo.png" class="ui-btn-left" />
+		<div style="position: absolute; right:100px; bottom:20px;">Partners Page</div>
+		<a href="index.html" class="ui-btn-right" data-icon="arrow-l" data-transition="none" 
+           data-direction="reverse">Back</a>
+        <h1></h1>
+        <h1></h1>
+	</div>
+	<div id="partners" data-role="content" align="center" class="partners-wrapper" iscroll="true">
+    <table>
+	<tr>
+	<td>
+	<a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkuniverse.com');"><img src="../www/images/tpulogofinal.png" width="130" height="85" border="1"></a>
+	</td>
+	<td>
+	<a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.coaster-net.com');"><img src="../www/images/cnlogo001.png" width="130" height="85" border="1"></a>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.coastineast.com');"><img src="../www/images/coastineastlogo001.png" width="130" height="85" border="1"></a>
+	</td>
+	<td>
+	<a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkcentral.net');"><img src="../www/images/tpcentrallogo001.png" width="130" height="85" border="1"></a>
+	</td>
+	</tr>
+	</table>
+	<p align="center">
+	<font size="-1"><b>*Click on a partner to view their site*</b></font>
+    </p>
+    <p align="center">
+ 	<font size="-1"><b>Interested in becoming a partner?</b></font>
+	</p>
+	<p align="center">
+	<font size="-1">Email: <a href="mailto:rnewton@themeparkcoasterclub.com">rnewton@themeparkcoasterclub.com</a></font>
+	</p>
+	<p align="center">
+	<font size="-1"><b><span style="text-decoration:underline">Disclaimer:</span></b></font>
+	</p>
+	<p align="center">
+	<font size="-1">
+	All images and content are copyright of their respective owners
+	</font>
+	</p>
+	<p align="center">
+	<font size="-1">Theme Park Coaster Club assumes no responsibility for the content provided<br>on partner sites</font>
+	</p>
+	</div>
+	<div data-role="footer" data-position="fixed" data-tap-toggle="false">
+	<h1>&copy; 2012: <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkcoasterclub.com');">Theme Park Coaster Club</a>
+	</h1>
+	<h1>App Designer: Brian Mitchell
+	</h1>
+	</div>
+	</body>
+</html>
