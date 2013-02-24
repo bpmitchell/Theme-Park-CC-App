@@ -13,44 +13,34 @@
         <title>Theme Park CC App</title>
     </head>
     <body onLoad="onBodyLoad();">
+    <script type="text/javascript">
+    $(document).bind("touchmove",function(event){
+	event.preventDefault();
+   });
+   </script>
     <div data-role="page">
      <div data-role="header" data-position="fixed">
      <img src="img/tpcclogo.png" class="ui-btn-left" />
-     <a href="index.html" class="ui-btn-right" data-theme="c" data-icon="arrow-l" data-transition="slide" 
-      data-direction="reverse"><font size="+2">Back</font></a>
+     <a href="index.html" class="ui-btn-right" data-theme="c" data-icon="arrow-l" data-transition="none" 
+      data-direction="reverse">Back</a>
      <h1></h1>
      <h1></h1>
       </div>
-	<div id="pricingpage" data-role="content" class="pricing-wrapper" data-iscroll="true">
-	<p align="center">
-	<b>Single Membership</b><br>(No Card) - $5.00
-	</p>
-	<p align="center">
-	<b>Single Membership</b><br>(With Card) - $10.00
-	</p>
-	<p align="center">
-	<b>Couples Membership</b><br>
-	(Good for two People) - $25.00
-	</p>
-	<p align="center">
-	<b>Family Membership</b><br> 
-	(Good for four to six people in the same family) - $25.00
-	</p>
-	<p align="center">
-	*One Membership Card included with a Family Membership,<br>Extra/Replacement Membership Cards - $5.00 each
-	</p>
-	<p align="center">
-	<font color="red"><i>All membership fees are non refundable</i></font>
-	</p>
-	<p align="center">
-	Lost your Membership Card? Replacement Cards can be bought for $5.00 plus a $2.00 Replacement Fee ($7.00).
-	</p>
+	<div id="pricingpage" data-role="content" data-iscroll="true">
+	<p><span style="text-decoration: underline;"><b>Pricing:</b></span></p>
+	<ul>
+	<li><p><b>Single Membership</b></p><p>(No Card) - $5.00</p></li>
+	<li><p><b>Single Membership</b></p><p>(With Card) - $10.00</p></li>
+	<li><p><b>Couples Membership</b></p><p>(Good for two People) - $25.00</p></li>
+	<li><p><b>Family Membership</b></p><p>(Good for four to six people in the same family) - $25.00</p></li>
+	<li><p>*One Membership Card included with a Family Membership,</p><p>Extra/Replacement Membership Cards - $5.00 each</p></li>
+	<li><p><font color="red"><i>All membership fees are non refundable</i></font></p></li>
+    <li><p>Lost your Membership Card? Replacement Cards can be bought for $5.00 plus a $2.00</p><p>Replacement Fee ($7.00)</p></li>
+    </ul>
 	</div>
 	<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-id="footer">
-	<h1>&copy; 2012: <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkcoasterclub.com');">Theme Park Coaster Club</a>
-	</h1>
-	<h1>App Designer: Brian Mitchell
-	</h1>
+    <h1>Web site: <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkcoasterclub.com');">www.themeparkcoasterclub.com</a></h1>
+	<h1>App Designer: Brian Mitchell</h1>
 	</div>
 	</div>
 </body>

@@ -13,6 +13,11 @@
         <title>Theme Park CC App</title>
     </head>
     <body onLoad="onBodyLoad();">
+    <script type="text/javascript">
+    $(document).bind("touchmove",function(event){
+	event.preventDefault();
+   });
+   </script>
     <div data-role="page" id="mainpage">
      <div data-role="header" data-position="fixed">
      <img src="img/tpcclogo.png" class="ui-btn-left" />
@@ -23,63 +28,63 @@
           <div data-role="content">
                     <ul data-role="listview" data-divider-theme="a" data-inset="true">
                               <li data-role="list-divider" data-role="heading">
-                                        <font size="+3">Navigation</font>
+                                        Navigation
                               </li>
                               <li data-theme="c">
-                                        <a href="pricing.html" data-transition="slide">
-                                                  <font size="+5">Pricing</font>
+                                        <a href="pricing.html" data-transition="none">
+                                                  Pricing
                                         </a>
                               </li>
                               <li data-theme="c">
                                         <a href="benefits.html" data-transition="none">
-                                                  <font size="+5">Benefits</font>
+                                                  Benefits
                                         </a>
                               </li>
                               <li data-theme="c">
                                         <a href="partners.html" data-transition="none">
-                                                  <font size="+5">Partner Sites</font>
+                                                  Partner Sites
                                         </a>
                               </li>
                               <li data-theme="c">
                                         <a href="discounts.html" data-transition="none">
-                                                  <font size="+5">Discounts</font>
+                                                  Discounts
                                         </a>
                               </li>
                               <li data-theme="c">
                                         <a href="contactus.html" data-transition="none">
-                                                  <font size="+5">Contact Us</font>
+                                                  Contact Us
                                         </a>
                               </li>
                     </ul>
          <ul data-role="listview" data-divider-theme="a" data-inset="true">
                               <li data-role="list-divider" data-role="heading">
-                                        <font Size="+3">Social Networks</font>
+                                        Social Networks
                               </li>
                               <li data-theme="c">
-                                        <a href="#page1" data-transition="slide">
-                                                  <font size="+5">Facebook</font>
+                                        <a href="facebook.html" data-transition="slide">
+                                                  Facebook
                                         </a>
                               </li>
                               <li data-theme="c">
-                                        <a href="#page1" data-transition="slide">
-                                                  <font size="+5">Twitter</font>
+                                        <a href="twitter.html" data-transition="slide">
+                                                  Twitter
                                         </a>
                               </li>
                               <li data-theme="c">
-                                        <a href="#page1" data-transition="slide">
-                                                  <font size="+5">YouTube</font>
+                                        <a href="youtube.html" data-transition="slide">
+                                                  YouTube
                                         </a>
                               </li>
                               <li data-theme="c">
-                                        <a href="#page1" data-transition="slide">
-                                                  <font size="+5">Google +</font>
+                                        <a href="googleplus.html" data-transition="slide">
+                                                  Google +
                                         </a>
                               </li>
                     </ul>
                     </div>
       <div data-role="footer" data-position="fixed">
-	<h1>&copy; <font size="+2">2012:</font> <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.coaster-net.com');"><font size="+2">Theme Park Coaster Club</font></a></h1>
-	<h1><font size="+2">App Designer: Brian Mitchell</font></h1>
+	<h1>Web site: <a href="#" onclick="window.plugins.childBrowser.showWebPage('http://www.themeparkcoasterclub.com');">www.themeparkcoasterclub.com</a></h1>
+	<h1>App Designer: Brian Mitchell</h1>
 	</div>
 	</div>
     </body>
